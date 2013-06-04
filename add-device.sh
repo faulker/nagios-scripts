@@ -77,8 +77,5 @@ while [ $ONEMORE == true ]; do
 	fi
 done
 
-read -n1 -p "Restart the Nagios Server (y/n)? " RESTART && echo
-if [[ $RESTART =~ [yY] ]]; then
-	restart_nagios
-fi
+restart_nagios
 exit 1
